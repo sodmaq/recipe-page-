@@ -17,6 +17,7 @@
   --Wenge-Brown: hsl(30, 10%, 34%);
   --Dark-Charcoal: hsl(24, 5%, 18%);
 }
+
 body {
   font-family: "Outfit", sans-serif;
   background-color: var(--Eggshell-background-color);
@@ -26,19 +27,23 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  line-height: 1.5;
+  gap: 2rem;
+  line-height: 1.6;
 }
-.preparation-section,
-.ingredients {
-  margin-top: 1.5rem;
+
+.ingredients,
+.preparation-section {
+  margin-top: 1.4rem;
 }
+
 .paragraph,
 .ingredients,
 .instructions,
 .instructions li span,
 .preparation-section,
 .preparation-section li span,
-.nutrition-section {
+.nutrition-section,
+.gram {
   color: var(--Wenge-Brown);
 }
 
@@ -46,25 +51,32 @@ body {
   background-color: var(--White-color);
   padding: 2.2rem;
   margin: auto;
-  max-width: 45rem;
+  max-width: 48rem;
   border-radius: 0.7rem;
 }
+
 img {
+  display: block;
   max-width: 100%;
   border-radius: 0.6rem;
 }
+
 .title {
   font-family: "Young Serif", serif;
   margin-top: 1.8rem;
   letter-spacing: 0.2rem;
   color: var(--Dark-Charcoal);
 }
-.title {
-  font-family: "Young Serif", serif;
-  margin-top: 1.8rem;
-  letter-spacing: 0.2rem;
-  color: var(--Dark-Charcoal);
+
+.paragraph {
+  font-weight: bold;
+  margin-top: 1rem;
+  max-width: 100%;
+  margin-bottom: 1rem;
 }
+
+/* PREPARATION SECTION */
+
 .preparation-section {
   font-family: "Outfit", sans-serif;
   background: var(--Rose-White);
@@ -81,25 +93,39 @@ img {
 .preparation-section li span {
   font-weight: bold;
 }
+
+/*  INGREDIENTS H2, INSTRUCTIONS H2 and NUTRITION SECTION H2 */
+
 .ingredients h2,
 .instructions h2,
 .nutrition-section h2 {
   letter-spacing: 4px;
   color: var(--Nutmeg-color);
 }
+
+/* UNORDERED &ORDERED ITEM */
 ul li,
 ol li {
   padding-left: 1rem;
 }
+
 li::marker {
   color: var(--Nutmeg-color);
 }
 
+/* HORIZONTAL LINES */
 .ingredients,
 .instructions {
   border-bottom: 1px solid var(--Light-Grey);
   padding: 2rem;
 }
+
+/* INSTRUCTION  */
+
+.instructions {
+  font-size: 1rem;
+}
+
 .instructions ol li span {
   font-weight: bold;
 }

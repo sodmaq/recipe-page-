@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary color */
+  --Nutmeg-color: hsl(14, 45%, 36%);
+  --Dark-Raspberry: hsl(332, 51%, 32%);
+
+  /* Neutral color */
+  --White-color: hsl(0, 0%, 100%);
+  --Rose-White: hsl(330, 100%, 98%);
+  --Eggshell-background-color: hsl(30, 54%, 90%);
+  --Light-Grey: hsl(30, 18%, 87%);
+  --Wenge-Brown: hsl(30, 10%, 34%);
+  --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--Eggshell-background-color);
+  padding: 1.9rem 2.5rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 1.5;
+}
+.preparation-section,
+.ingredients {
+  margin-top: 1.5rem;
+}
+.paragraph,
+.ingredients,
+.instructions,
+.instructions li span,
+.preparation-section,
+.preparation-section li span,
+.nutrition-section {
+  color: var(--Wenge-Brown);
+}
+
+.container {
+  background-color: var(--White-color);
+  padding: 2.2rem;
+  margin: auto;
+  max-width: 48rem;
+  border-radius: 0.7rem;
+}

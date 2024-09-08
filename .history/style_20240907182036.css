@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: burlywood;
+}
+img {
+  width: 150px;
+  height: 150px;
+}
+.container {
+  background-color: blue;
+}
+header {
+  background-color: brown;
+}
+li {
+  list-style: circle;
+}
